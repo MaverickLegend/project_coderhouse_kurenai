@@ -22,18 +22,18 @@ body {
     color: whitesmoke;
 }
 
-h1{
+h1 {
     font-weight: normal;
     letter-spacing: 0.15cm;
 }
 
-h2{
+h2 {
     font-weight: normal;
     letter-spacing: 0.1cm;
     font-size: 2rem;
 }
 
-h3{
+h3 {
     font-weight: normal;
     font-size: 1.5rem;
     letter-spacing: 0.05cm;
@@ -57,14 +57,14 @@ a:visited {
     color: whitesmoke;
 }
 
-iframe{ 
+iframe {
     height: 300px;
     padding: 2rem 2rem;
 }
 
 /* ------------------------------------------clases transversales---------------------------------------- */
 
-.presentacion{
+.presentacion {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -74,12 +74,12 @@ iframe{
     text-align: center;
 }
 
-.presentacion h2{
+.presentacion h2 {
     width: 60%;
     text-align: center;
 }
 
-.presentacion-logo{
+.presentacion-logo {
     display: flex;
     width: 60%;
     justify-content: space-evenly;
@@ -87,6 +87,7 @@ iframe{
     padding: 2rem;
     font-size: 2rem;
 }
+
 /* ---------------------------------header y nav------------------------------- */
 
 .header {
@@ -101,22 +102,22 @@ iframe{
 .header__logo {
     display: flex;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
     width: 50%;
 }
 
-.header__logo img{
+.header__logo img {
     text-align: center;
     padding: 0 2rem;
     height: 8rem;
     width: auto;
 }
 
-.header__logo h1{
+.header__logo h1 {
     font-size: 5rem;
 }
 
-.header__nav{
+.header__nav {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -124,7 +125,7 @@ iframe{
     font-size: large;
 }
 
-.header__nav-item{
+.header__nav-item {
     cursor: pointer;
     padding: 1rem;
     color: whitesmoke;
@@ -132,7 +133,7 @@ iframe{
 
 /* ----------------------------------footer------------------------------------ */
 
-.footer{
+.footer {
     grid-area: foot;
     display: flex;
     width: 100%;
@@ -142,7 +143,7 @@ iframe{
     font-size: 1.2rem;
 }
 
-.footer__mapa{
+.footer__mapa {
     display: flex;
     flex-direction: column;
     width: 50%;
@@ -151,22 +152,22 @@ iframe{
     padding-bottom: 1rem;
 }
 
-.footer__mapa div{
+.footer__mapa div {
     width: 300px;
     height: 300px;
 }
 
-.footer__mapa p{
+.footer__mapa p {
     font-size: 1.8rem;
 }
 
-.footer__rrss{
+.footer__rrss {
     width: 50%;
     text-align: center;
     font-size: 1.8rem;
 }
 
-.footer__rrss img{
+.footer__rrss img {
     height: 7.5rem;
     width: 7.5rem;
     padding: 1rem;
@@ -174,80 +175,100 @@ iframe{
 
 /* ---------------------------------media query tranversal---------------------------- */
 
-@media screen and (max-width: 1210px){
-    .header{
+@media screen and (max-width: 1210px) {
+    .header {
         flex-direction: column;
         padding: 1rem;
         justify-content: center;
     }
 
-    .header__logo{
+    .header__logo {
         width: 100%;
     }
 
-    .header__nav{
+    .header__nav {
         width: 100%;
         justify-content: space-evenly;
     }
-    
-    .footer div{
+
+    .footer div {
         margin: 1rem;
     }
 }
 
-@media screen and (max-width: 610px){
-    .header__logo img{
+@media screen and (max-width: 610px) {
+    .header__logo img {
         padding: 0;
         width: auto;
     }
 
-    .header__logo h1{
+    .header__logo h1 {
         font-size: 2.5rem;
         width: 65%;
         text-align: center;
     }
 
-    .header__nav{
+    .header__nav {
         flex-direction: column;
-    }    
+    }
 
-    .footer{
+    .footer {
         flex-direction: column;
         width: 100%;
     }
 
-    .footer__mapa{
-        width: auto;
-    }
-    .footer__rrss{
+    .footer__mapa {
         width: auto;
     }
 
-    .presentacion{
-        padding: 0 1.5rem;
+    .footer__rrss {
+        width: auto;
     }
+
+    .presentacion {
+        padding: 0 1.5rem;
+        width: 100%;
+    }
+
+    .presentacion h3 {
+        width: 100%;
+    }
+
+    .presentacion-logo {
+        width: 100%;
+        padding: 1rem;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .presentacion-logo img,
+    h1 {
+        width: 50%;
+    }
+
 }
 
-@media screen and (max-width: 360px){
-    .header__logo{
+@media screen and (max-width: 400px) {
+    .header__logo {
         justify-content: center;
     }
-    .header__logo img{
+
+    .header__logo img {
         padding: 0;
         width: auto;
     }
 
-    .header__logo h1{
+    .header__logo h1 {
         font-size: 2rem;
         width: 80%;
         text-align: center;
     }
 
-    .presentacion{
+    .presentacion {
         padding: 1rem;
     }
 
-    .presentacion-logo{
+    .presentacion-logo {
         width: 100%;
     }
 }
@@ -256,19 +277,19 @@ iframe{
 
 /* ------------------------------body-------------------------------- */
 
-.body__index{
+.body__index {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.7fr auto 1fr;
-    grid-template-areas: 
-    "head head"
-    "main__index main__index"
-    "foot foot";
+    grid-template-areas:
+        "head head"
+        "main__index main__index"
+        "foot foot";
 }
 
 /* -------------------------------main-------------------------------- */
 
-.main__index{
+.main__index {
     grid-area: main__index;
     display: flex;
     flex-direction: column;
@@ -276,7 +297,8 @@ iframe{
     padding: 3rem;
     height: 100%;
 }
-.main__index__section1{    
+
+.main__index__section1 {
     width: 50%;
     height: 50%;
     font-size: larger;
@@ -284,54 +306,53 @@ iframe{
     justify-self: center;
 }
 
-.main__index__section2{
-
-}
-
 /* -------------- media query index------------------- */
 
-@media screen and (max-width: 1210px){
-    .main__index{
+@media screen and (max-width: 1210px) {
+    .main__index {
         padding: 3rem;
     }
-    .main__index__section1{
+
+    .main__index__section1 {
         width: 100%;
         padding: 2rem;
     }
 }
-@media screen and (max-width: 610px){
-    .body__index{
+
+@media screen and (max-width: 610px) {
+    .body__index {
         grid-template-columns: 1fr;
         grid-template-rows: 0.3fr auto 1fr;
         gap: 0;
     }
 
-    .main__index{
+    .main__index {
         padding: 1rem;
     }
 
-    .main__index__section1{
+    .main__index__section1 {
         width: 100%;
         padding: 0;
     }
-    
-    .main__index div{
+
+    .main__index div {
         padding: 2rem;
     }
 }
+
 /* -------------------------------------------------kurenai records------------------------------------------------------- */
 
-.body__records{
+.body__records {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.7fr auto 1fr;
-    grid-template-areas: 
-    "head head"
-    "main__records main__records"
-    "foot foot";
+    grid-template-areas:
+        "head head"
+        "main__records main__records"
+        "foot foot";
 }
 
-.main__records{
+.main__records {
     grid-area: main__records;
     display: flex;
     flex-direction: column;
@@ -340,13 +361,13 @@ iframe{
 
 }
 
-.main__records__servicios{
+.main__records__servicios {
     display: flex;
     flex-direction: column;
     padding: 1rem;
 }
 
-.records__servicios{
+.records__servicios {
     display: flex;
     flex-direction: column;
     padding: 3rem;
@@ -354,31 +375,61 @@ iframe{
     align-items: center;
 }
 
-.records__servicios-content{
+.records__servicios-content {
     text-align: center;
     width: 60%;
     padding: 2rem 0;
 }
 
-.records__servicios-imagen img{
+.records__servicios-imagen img {
     height: 400px;
     width: 700px;
 }
+
+/* ---------------------------------records media queries------------------------- */
+
+@media screen and (max-width: 900px) {
+    .records__servicios-content {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .records__servicios-imagen img {
+        height: 300px;
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .records__servicios-imagen img {
+        height: 200px;
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .records__servicios-imagen img {
+        height: 150px;
+        width: 260px;
+    }
+}
+
 /* -------------------------------------------------kurenai tattoo--------------------------------------------------------- */
 
-.body__tattoo{
+.body__tattoo {
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 0.7fr auto 1fr;
-    grid-template-areas: 
-    "head head"
-    "aside__tattoo main__tattoo"
-    "foot foot";
+    grid-template-areas:
+        "head head"
+        "aside__tattoo main__tattoo"
+        "foot foot";
     justify-items: center;
 }
 
 /* ----------------------------aside tattoo--------------------------- */
-.aside__tattoo{
+.aside__tattoo {
     grid-area: aside__tattoo;
     display: flex;
     flex-direction: column;
@@ -390,7 +441,7 @@ iframe{
     width: 100%;
 }
 
-.scroll__tattoo{
+.scroll__tattoo {
     display: flex;
     flex-direction: column;
     height: auto;
@@ -399,153 +450,150 @@ iframe{
     top: 0;
 }
 
-.aside__tattoo-links{
+.aside__tattoo-links {
     color: rgb(255, 255, 255);
     cursor: pointer;
     padding: 1rem;
     text-decoration: none;
 }
 
-.aside__tattoo-avatar{
+.aside__tattoo-avatar {
     display: flex;
     justify-content: center;
 }
 
-.aside__tattoo-avatar img{
+.aside__tattoo-avatar img {
     height: 100px;
     width: 100px;
     border-radius: 50px;
     border: solid 1px black;
 }
 
-.aside__tattoo div{
+.aside__tattoo div {
     width: 100%;
 }
 
-.aside__tattoo h2{
+.aside__tattoo h2 {
     text-align: center;
 }
 
-.aside__tattoo div h3{
+.aside__tattoo div h3 {
     padding: 1rem;
     text-align: center;
 }
 
-.aside__tattoo div a{
+.aside__tattoo div a {
     text-decoration: none;
 }
 
 /* ------------------------------------------main tattoo----------------------------------- */
 
-.main__tattoo{
+.main__tattoo {
     background-color: #934a47;
     grid-area: main__tattoo;
     display: flex;
     flex-direction: column;
 }
 
-.main__tattoo-title{
+.main__tattoo-title {
     text-align: center;
 }
 
-.main__tattoo-galeria{
+.main__tattoo-galeria {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 1rem;
     padding: 1rem;
 }
 
-.main__tattoo-galeria img{
+.main__tattoo-galeria img {
     height: 300px;
     width: 100%;
 }
 
 /* --------------------- media query tattoo----------------- */
-@media screen and (max-width: 1210px){
-    .presentacion{
+@media screen and (max-width: 1210px) {
+    .presentacion {
         width: 80%;
     }
-    
-    .presentacion-logo{
+
+    .presentacion-logo {
         width: 90%;
     }
 }
 
-@media screen and (max-width: 610px){
-    .body__tattoo{
+@media screen and (max-width: 610px) {
+    .body__tattoo {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 0.7fr auto auto 1fr;
-        grid-template-areas: 
-        "head"
-        "aside__tattoo"
-        "main__tattoo"
-        "foot";
+        grid-template-areas:
+            "head"
+            "aside__tattoo"
+            "main__tattoo"
+            "foot";
     }
 
-    .aside__tattoo{
-    display: flex;
-    font-size: smaller;
-    height: auto;
-    justify-content: center;
+    .aside__tattoo {
+        display: flex;
+        font-size: smaller;
+        height: auto;
+        justify-content: center;
     }
 
-    .aside__tattoo h2{
+    .aside__tattoo h2 {
         display: flex;
         justify-content: center;
         width: 100%;
     }
 
-    .aside__tattoo-avatar img{
-        height: 40px;
-        width: 40px;
+    .aside__tattoo-avatar img {
+        height: 80px;
+        width: 80px;
         border-radius: 20px;
         border: solid 1px black;
     }
 
-    .tatuadores1, .tatuadores2{
-        display: flex;
+    .presentacion {
+        width: 100%;
     }
 
-    .presentacion{
+    .presentacion h3 {
         width: 100%;
     }
-    
-    .presentacion h3{
-        width: 100%;
-        font-size: 1rem;
-    }
-    
-    .presentacion-logo{
+
+    .presentacion-logo {
         width: 100%;
         padding: 1rem;
         font-size: 1.5rem;
         text-align: center;
     }
-    .presentacion-logo img, h1{
+
+    .presentacion-logo img,
+    h1 {
         width: 50%;
     }
 
-    .main__tattoo-title{
+    .main__tattoo-title {
         display: flex;
         justify-content: center;
         width: 100%;
     }
-
+}
 
 
 /* --------------------------------------- kurenai wizard ---------------------------------------- */
-.body__wizard{
+.body__wizard {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.7fr auto 1fr;
-    grid-template-areas: 
-    "head head"
-    "main__wizard main__wizard"
-    "foot foot";
+    grid-template-areas:
+        "head head"
+        "main__wizard main__wizard"
+        "foot foot";
 }
 
-.main__wizard{
+.main__wizard {
     grid-area: main__wizard;
     display: flex;
     flex-direction: column;
@@ -553,19 +601,113 @@ iframe{
     align-items: center;
 }
 
-.wizard__section{
+.wizard__section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.wizard__section-content{
+.wizard__section-content {
     text-align: center;
     width: 70%;
     padding: 2rem;
 }
 
-.wizard__section-content h1,h2{
+.wizard__section-content h2,
+h3 {
     padding: 1.5rem;
+}
+
+.wizard__section-content h3 {
+    font-size: 2.5rem;
+}
+
+.wizard__section-content p {
+    font-size: 1.5rem;
+}
+
+
+/* ---------------------------------------media queries wizard----------------------------------- */
+
+@media screen and (max-width: 1210px) {
+    .wizard__section-content {
+        width: 100%;
+        padding: 0 1rem;
+    }
+}
+
+/* -------------------------------------------------------------------contacto------------------------------------------------------ */
+
+.body__contacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.7fr auto 1fr;
+    grid-template-areas:
+        "head head"
+        "contacto contacto"
+        "foot foot";
+}
+
+.main__contacto {
+    grid-area: contacto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0;
+}
+
+.contacto__acercade {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    text-align: center;
+    width: 50%;
+}
+
+.contacto__container__formulario{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contacto__container__formulario h2{
+    padding-bottom: 2rem;
+}
+
+.contacto__formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #acba8a;
+    padding: 3rem 0;
+    justify-content: center;
+    text-align: center;
+}
+
+/* --------------------------------------media queries---------------------------- */
+
+@media screen and (max-width: 1210px) {
+    .contacto__acercade {
+        width: 100%;
+    }
+
+
+}
+
+@media screen and (max-width: 800px) {
+    .contacto__container__formulario {
+        width: 80%;
+    }
+    .main__contacto {
+        justify-content: flex-start;
+        padding: 1rem 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .contacto__formulario textarea {
+        width: 80%;
+    }
 }

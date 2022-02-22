@@ -10,7 +10,7 @@
     <title>Document</title>
 </head>
 
-<body>
+<body class="body__contacto">
     <header class="header">
         <div class="header__logo">
             <img src="../img/1x/Recurso 2.png" alt="Logo">
@@ -34,48 +34,59 @@
             </a>
         </nav>
     </header>
-    <main>
-        <h2>Ingrese sus datos de contacto y realice su consulta</h2>
-        <form class="formulario">
+    <main class="main__contacto">
+        <div class="contacto__acercade">
+            <h2>¿Quiénes somos?</h2>
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quod, tempore maiores itaque dolores,
+                sequi est beatae laudantium doloribus mollitia odio numquam reiciendis enim aliquam pariatur eligendi,
+                error sapiente molestiae.</h3>
             <div>
-                <label for="nombre_apellido">Nombre</label>
-                <input type="text" name="nombre_apellido">
+                <img src="" alt="">
             </div>
-            <br>
-            <div>
-                <label for="numero_telefono">Teléfono +569</label>
-                <input type="tel" id="telefono" name="numero_telefono" minlength="8" maxlength="8">
-            </div>
-            <br>
-            <div>
-                <label for="correo">Mail</label>
-                <input type="email" id="mail" name="correo">
-            </div>
-            <br>
-            <div>
-                <label for="servicio">Seleccione el área de consulta</label>
-                <select name="servicio" id="servicio">
-                    <option value="records">Kurenai Records</option>
-                    <option value="tattoo">Kurenai Tattoo</option>
-                    <option value="wizard">Kurenai Wizard</option>
-                    <option value="otro">Otro</option>
-                </select>
-            </div>
-            <br>
-            <div>
-                <label for="texto">Realice su consulta</label>
+        </div>
+        <div class="contacto__container__formulario">
+            <h2>Ingrese sus datos de contacto y realice su consulta</h2>
+            <form class="contacto__formulario">
+                <div>
+                    <label for="nombre_apellido">Nombre</label>
+                    <input type="text" name="nombre_apellido">
+                </div>
                 <br>
-                <textarea name="texto" id="texto" cols="40" rows="15"></textarea>
-            </div>
-            <br>
-            <div>
-                <label for="party">Elija su fecha de trabajo tentativa:</label>
-                <input type="date" id="agenda" name="agenda" min="2022-01-27" max="2022-12-22">
-            </div>
-            <br>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Borrar">
-        </form>
+                <div>
+                    <label for="numero_telefono">Teléfono +569</label>
+                    <input type="tel" id="telefono" name="numero_telefono" minlength="8" maxlength="8">
+                </div>
+                <br>
+                <div>
+                    <label for="correo">Mail</label>
+                    <input type="email" id="mail" name="correo">
+                </div>
+                <br>
+                <div>
+                    <label for="servicio">Seleccione el área de consulta</label>
+                    <select name="servicio" id="servicio">
+                        <option value="records">Kurenai Records</option>
+                        <option value="tattoo">Kurenai Tattoo</option>
+                        <option value="wizard">Kurenai Wizard</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="texto">Realice su consulta</label>
+                    <br>
+                    <textarea name="texto" id="texto" cols="40" rows="15"></textarea>
+                </div>
+                <br>
+                <div>
+                    <label for="party">Elija su fecha de trabajo tentativa:</label>
+                    <input type="date" id="agenda" name="agenda" min="2022-01-27" max="2022-12-22">
+                </div>
+                <br>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar">
+            </form>
+        </div>
     </main>
     <footer class="footer">
         <div class="footer__mapa">
@@ -96,7 +107,6 @@
             </div>
         </div>
     </footer>
-
 </body>
 
 </html>
