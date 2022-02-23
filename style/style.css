@@ -72,8 +72,11 @@ iframe {
     align-self: center;
     width: 60%;
     text-align: center;
+<<<<<<< HEAD
     animation-name: presentacion;
     animation-duration: 1.5s;
+=======
+>>>>>>> 7625ab5620959279069b618a1c73bde01a46036c
 }
 
 .presentacion h2 {
@@ -106,8 +109,11 @@ iframe {
     align-items: center;
     justify-content: center;
     width: 50%;
+<<<<<<< HEAD
     animation-name: banner;
     animation-duration: 1.5s;
+=======
+>>>>>>> 7625ab5620959279069b618a1c73bde01a46036c
 }
 
 .header__logo img {
@@ -135,11 +141,14 @@ iframe {
     color: whitesmoke;
 }
 
+<<<<<<< HEAD
 .header__nav-item:hover{
     background-color: #779c8b;
     border-radius: 1rem;
     transition: 0.5s ease-in-out;
 }
+=======
+>>>>>>> 7625ab5620959279069b618a1c73bde01a46036c
 /* ----------------------------------footer------------------------------------ */
 
 .footer {
@@ -305,9 +314,12 @@ iframe {
     align-items: center;
     padding: 3rem;
     height: 100%;
+<<<<<<< HEAD
     animation-name: index;
     animation-duration: 2s;
 
+=======
+>>>>>>> 7625ab5620959279069b618a1c73bde01a46036c
 }
 
 .main__index__section1 {
@@ -437,7 +449,10 @@ iframe {
         "head head"
         "aside__tattoo main__tattoo"
         "foot foot";
+<<<<<<< HEAD
     grid-gap: 0.2rem ;
+=======
+>>>>>>> 7625ab5620959279069b618a1c73bde01a46036c
     justify-items: center;
 }
 
@@ -452,8 +467,11 @@ iframe {
     align-items: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     width: 100%;
+<<<<<<< HEAD
     animation-name: asidetattoo;
     animation-duration: 1.5s;
+=======
+>>>>>>> 7625ab5620959279069b618a1c73bde01a46036c
 }
 
 .scroll__tattoo {
@@ -504,12 +522,19 @@ iframe {
 /* ------------------------------------------main tattoo----------------------------------- */
 
 .main__tattoo {
+<<<<<<< HEAD
     background-image: linear-gradient(to right, #f0aa88,#8d4645);
     grid-area: main__tattoo;
     display: flex;
     flex-direction: column;
     animation-name: maintattoo;
     animation-duration: 1.5s;
+=======
+    background-color: #934a47;
+    grid-area: main__tattoo;
+    display: flex;
+    flex-direction: column;
+>>>>>>> 7625ab5620959279069b618a1c73bde01a46036c
 }
 
 .main__tattoo-title {
@@ -528,6 +553,7 @@ iframe {
     width: 100%;
 }
 
+<<<<<<< HEAD
 .main__tattoo-galeria img:hover{
     transition: all .3s ease-in-out;;
     filter: saturate(180%);
@@ -535,6 +561,8 @@ iframe {
     border: solid 1px black;
 }
 
+=======
+>>>>>>> 7625ab5620959279069b618a1c73bde01a46036c
 /* --------------------- media query tattoo----------------- */
 @media screen and (max-width: 1210px) {
     .presentacion {
@@ -734,6 +762,7 @@ h3 {
     .contacto__formulario textarea {
         width: 80%;
     }
+<<<<<<< HEAD
 }
 
 
@@ -791,3 +820,6 @@ h3 {
 
 
 
+=======
+}
+>>>>>>> 7625ab5620959279069b618a1c73bde01a46036c
