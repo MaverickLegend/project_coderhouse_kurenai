@@ -4,6 +4,7 @@ button-succes: #acba8a
 button-danger: #da6a5c */
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Architects+Daughter&family=Dosis:wght@200&display=swap');
 
 * {
     padding: 0;
@@ -72,11 +73,8 @@ iframe {
     align-self: center;
     width: 60%;
     text-align: center;
-<<<<<<< HEAD
     animation-name: presentacion;
     animation-duration: 1.5s;
-=======
->>>>>>> 7625ab5620959279069b618a1c73bde01a46036c
 }
 
 .presentacion h2 {
@@ -86,10 +84,10 @@ iframe {
 
 .presentacion-logo {
     display: flex;
-    width: 60%;
     justify-content: space-evenly;
     align-items: center;
-    padding: 2rem;
+    width: 60%;
+    margin: 2rem 0;
     font-size: 2rem;
 }
 
@@ -109,11 +107,8 @@ iframe {
     align-items: center;
     justify-content: center;
     width: 50%;
-<<<<<<< HEAD
     animation-name: banner;
     animation-duration: 1.5s;
-=======
->>>>>>> 7625ab5620959279069b618a1c73bde01a46036c
 }
 
 .header__logo img {
@@ -139,16 +134,15 @@ iframe {
     cursor: pointer;
     padding: 1rem;
     color: whitesmoke;
+    font-family: 'Dosis', sans-serif;
+    font-size: 2.5rem;
 }
 
-<<<<<<< HEAD
 .header__nav-item:hover{
     background-color: #779c8b;
     border-radius: 1rem;
     transition: 0.5s ease-in-out;
 }
-=======
->>>>>>> 7625ab5620959279069b618a1c73bde01a46036c
 /* ----------------------------------footer------------------------------------ */
 
 .footer {
@@ -314,12 +308,9 @@ iframe {
     align-items: center;
     padding: 3rem;
     height: 100%;
-<<<<<<< HEAD
     animation-name: index;
     animation-duration: 2s;
 
-=======
->>>>>>> 7625ab5620959279069b618a1c73bde01a46036c
 }
 
 .main__index__section1 {
@@ -328,6 +319,21 @@ iframe {
     font-size: larger;
     text-align: center;
     justify-self: center;
+}
+
+.main__index__section2{
+    margin-bottom: 2rem;
+}
+
+.main__index__section2 div {
+    display: flex;
+    justify-content: center;
+}
+
+.main__index__section2 img{
+    width: 20%;
+    height: 20%;
+    text-align: center;
 }
 
 /* -------------- media query index------------------- */
@@ -449,10 +455,7 @@ iframe {
         "head head"
         "aside__tattoo main__tattoo"
         "foot foot";
-<<<<<<< HEAD
     grid-gap: 0.2rem ;
-=======
->>>>>>> 7625ab5620959279069b618a1c73bde01a46036c
     justify-items: center;
 }
 
@@ -467,11 +470,8 @@ iframe {
     align-items: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     width: 100%;
-<<<<<<< HEAD
     animation-name: asidetattoo;
     animation-duration: 1.5s;
-=======
->>>>>>> 7625ab5620959279069b618a1c73bde01a46036c
 }
 
 .scroll__tattoo {
@@ -522,19 +522,12 @@ iframe {
 /* ------------------------------------------main tattoo----------------------------------- */
 
 .main__tattoo {
-<<<<<<< HEAD
     background-image: linear-gradient(to right, #f0aa88,#8d4645);
     grid-area: main__tattoo;
     display: flex;
     flex-direction: column;
     animation-name: maintattoo;
     animation-duration: 1.5s;
-=======
-    background-color: #934a47;
-    grid-area: main__tattoo;
-    display: flex;
-    flex-direction: column;
->>>>>>> 7625ab5620959279069b618a1c73bde01a46036c
 }
 
 .main__tattoo-title {
@@ -553,16 +546,14 @@ iframe {
     width: 100%;
 }
 
-<<<<<<< HEAD
 .main__tattoo-galeria img:hover{
     transition: all .3s ease-in-out;;
     filter: saturate(180%);
     -webkit-transform: scale(1.02);
+    transform: scale(1.02);
     border: solid 1px black;
 }
 
-=======
->>>>>>> 7625ab5620959279069b618a1c73bde01a46036c
 /* --------------------- media query tattoo----------------- */
 @media screen and (max-width: 1210px) {
     .presentacion {
@@ -651,6 +642,11 @@ iframe {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.wizardlogo{
+    height: 50%;
+    width: 50%;
 }
 
 .wizard__section {
@@ -762,7 +758,6 @@ h3 {
     .contacto__formulario textarea {
         width: 80%;
     }
-<<<<<<< HEAD
 }
 
 
@@ -820,6 +815,3 @@ h3 {
 
 
 
-=======
-}
->>>>>>> 7625ab5620959279069b618a1c73bde01a46036c
