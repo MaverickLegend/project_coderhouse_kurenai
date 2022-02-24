@@ -15,12 +15,11 @@ button-danger: #da6a5c */
 
 html {
     font-size: 62.5%;
-    color: #acba8a;
 }
 
 body {
-    background-color: rgb(10, 9, 9);
-    color: whitesmoke;
+    background-image: url(../img/fondazoo.png);
+    color: whitesmoke !important;
 }
 
 h1 {
@@ -97,9 +96,10 @@ iframe {
     grid-area: head;
     display: flex;
     padding: 2 5rem;
-    background-color: #588b7c;
+    background-image: linear-gradient(to right, #231319b4, #821f38c7);
     width: 100%;
     align-items: center;
+    border-radius: 1rem;
 }
 
 .header__logo {
@@ -135,11 +135,11 @@ iframe {
     padding: 1rem;
     color: whitesmoke;
     font-family: 'Dosis', sans-serif;
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 .header__nav-item:hover{
-    background-color: #779c8b;
+    background-color: #b4516f;
     border-radius: 1rem;
     transition: 0.5s ease-in-out;
 }
@@ -149,7 +149,7 @@ iframe {
     grid-area: foot;
     display: flex;
     width: 100%;
-    background-color: #588b7c;
+    background-image: linear-gradient(to right, #231319b4, #821f38c7);
     justify-content: space-evenly;
     align-items: center;
     font-size: 1.2rem;
@@ -158,6 +158,7 @@ iframe {
 .footer__mapa {
     display: flex;
     flex-direction: column;
+    height: 50%;
     width: 50%;
     text-align: center;
     align-items: center;
@@ -290,13 +291,18 @@ iframe {
 /* ------------------------------body-------------------------------- */
 
 .body__index {
+    background-image: url(../img/fondazoo.png);
+}
+
+.body__main {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.7fr auto 1fr;
+    grid-template-rows: 0.5fr auto 0.5fr;
     grid-template-areas:
         "head head"
         "main__index main__index"
         "foot foot";
+    margin: 10rem;
 }
 
 /* -------------------------------main-------------------------------- */
@@ -375,7 +381,7 @@ iframe {
 .body__records {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.7fr auto 1fr;
+    grid-template-rows: 0.5fr auto 0.5fr;
     grid-template-areas:
         "head head"
         "main__records main__records"
@@ -450,7 +456,7 @@ iframe {
 .body__tattoo {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 0.7fr auto 1fr;
+    grid-template-rows: 0.5fr auto 0.5fr;
     grid-template-areas:
         "head head"
         "aside__tattoo main__tattoo"
@@ -465,7 +471,7 @@ iframe {
     display: flex;
     flex-direction: column;
     padding: 1rem;
-    background-color: #adbb8a;
+    background-image: linear-gradient(to top, #821f386e, #2313197e);
     justify-content: flex-start;
     align-items: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -522,7 +528,7 @@ iframe {
 /* ------------------------------------------main tattoo----------------------------------- */
 
 .main__tattoo {
-    background-image: linear-gradient(to right, #f0aa88,#8d4645);
+    background-image: url(../img/fondazoo.png);
     grid-area: main__tattoo;
     display: flex;
     flex-direction: column;
@@ -569,7 +575,7 @@ iframe {
     .body__tattoo {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 0.7fr auto auto 1fr;
+        grid-template-rows: 0.5fr auto auto 0.5fr;
         grid-template-areas:
             "head"
             "aside__tattoo"
@@ -728,7 +734,7 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #acba8a;
+    background-image: linear-gradient(to bottom, #821f38c7, #231319b4);
     padding: 3rem 0;
     justify-content: center;
     text-align: center;
