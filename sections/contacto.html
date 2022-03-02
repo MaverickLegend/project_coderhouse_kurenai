@@ -31,7 +31,7 @@
         </nav>
     </header>
     <main class="main__contacto">
-        <div class="contacto__acercade">
+        <div class="presentacion">
             <h2>¿Quiénes somos?</h2>
             <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quod, tempore maiores itaque dolores,
                 sequi est beatae laudantium doloribus mollitia odio numquam reiciendis enim aliquam pariatur eligendi,
@@ -42,51 +42,51 @@
         </div>
         <div class="contacto__container__formulario">
             <h2>Ingrese sus datos de contacto y realice su consulta</h2>
-            <form class="contacto__formulario">
-                <div>
+            <form class="contacto__formulario fs-4">
+                <div class="mb-3">
                     <label for="nombre_apellido">Nombre</label>
-                    <input type="text" name="nombre_apellido">
+                    <input class="form-control" type="text" name="nombre_apellido">
                 </div>
-                <br>
-                <div>
-                    <label for="numero_telefono">Teléfono +569</label>
-                    <input type="tel" id="telefono" name="numero_telefono" minlength="8" maxlength="8">
+                <label for="numero_telefono">Teléfono</label>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">+569</span>
+                    <input class="form-control" type="tel" id="telefono" name="numero_telefono" minlength="8"
+                        maxlength="8">
                 </div>
-                <br>
-                <div>
-                    <label for="correo">Mail</label>
-                    <input type="email" id="mail" name="correo">
+                <label for="correo">Mail</label>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Mail" aria-label="Username">
+                    <span class="input-group-text">@</span>
+                    <input type="text" class="form-control" placeholder="Dominio" aria-label="Server">
                 </div>
-                <br>
-                <div>
+                <div class="mb-3">
                     <label for="servicio">Seleccione el área de consulta</label>
-                    <select name="servicio" id="servicio">
+                    <select class="form-select form-select-lg mb-3" name="servicio" id="servicio">
                         <option value="records">Kurenai Records</option>
                         <option value="tattoo">Kurenai Tattoo</option>
                         <option value="wizard">Kurenai Wizard</option>
                         <option value="otro">Otro</option>
                     </select>
                 </div>
-                <br>
-                <div>
+                <div class="mb-3">
                     <label for="texto">Realice su consulta</label>
-                    <br>
-                    <textarea name="texto" id="texto" cols="40" rows="15"></textarea>
+                    <textarea class="form-control" name="texto" id="texto" cols="80" rows="25"></textarea>
                 </div>
-                <br>
-                <div>
+                <div class="mb-3">
                     <label for="party">Elija su fecha de trabajo tentativa:</label>
                     <input type="date" id="agenda" name="agenda" min="2022-01-27" max="2022-12-22">
                 </div>
-                <br>
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Borrar">
+                <div class="mb-3">
+                    <button type="button" class="btn btn-light btn-lg">Enviar</button>
+                    <button type="button" class="btn btn-light btn-lg">Reiniciar</button>
+                </div>
             </form>
         </div>
         <div class="footer__mapa">
             <p>Visítanos en Pasaje Los Espinos n69, Limonares. Te esperamos!</p>
             <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d418.09629880099004!2d-71.51769743447962!3d-33.03617919956495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689de8c18531847%3A0x9ed37f9e47f7f16!2sLos%20Espinos%2096%2C%20Vi%C3%B1a%20del%20Mar%2C%20Valpara%C3%ADso!5e0!3m2!1ses-419!2scl!4v1644276509010!5m2!1ses-419!2scl"
+                <iframe class="embed-responsive-item"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d418.09629880099004!2d-71.51769743447962!3d-33.03617919956495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689de8c18531847%3A0x9ed37f9e47f7f16!2sLos%20Espinos%2096%2C%20Vi%C3%B1a%20del%20Mar%2C%20Valpara%C3%ADso!5e0!3m2!1ses-419!2scl!4v1644276509010!5m2!1ses-419!2scl"
                     allowfullscreen></iframe>
             </div>
         </div>
