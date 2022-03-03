@@ -1,0 +1,93 @@
+@keyframes banner {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100;
+    }
+}
+
+@keyframes presentacion {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100;
+    }
+}
+
+@keyframes asidetattoo {
+    from {
+        transform: translateY(-5rem)
+    }
+
+    to {
+        transform: translateY(0)
+    }
+
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100;
+    }
+}
+
+@keyframes dropdown {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100;
+    }
+
+    from {
+        transform: translatey(0)
+    }
+
+    to {
+        transform: translatey(20rem)
+    }
+
+}
+
+@keyframes maintattoo {
+    from {
+        transform: translatex(5rem)
+    }
+
+    to {
+        transform: translatex(0)
+    }
+
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100;
+    }
+}
+
+@keyframes index {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100;
+    }
+}
+
+@keyframes fill {
+    0% {
+    border-color: #b4516f;
+    }
+    100% {
+    border-color: whitesmoke;
+    }
+}

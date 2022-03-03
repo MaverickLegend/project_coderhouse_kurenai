@@ -1,0 +1,54 @@
+.header {
+    grid-area: head;
+    display: flex;
+    padding: 2 5rem;
+    background-image: linear-gradient(to right, #231319b4, #821f38c7);
+    width: 100%;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    animation-name: banner;
+    animation-duration: 1.5s;
+    img {
+        text-align: center;
+        padding: 0 2rem;
+        height: 8rem;
+        width: auto;
+    }
+    h1 {
+        font-size: 5rem;
+    }
+}
+
+.header__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    font-size: large;
+    ul{
+        text-align: center;
+        li {
+            display: inline;
+            a {
+                text-decoration: none;
+                font-family: 'Dosis', sans-serif;
+                font-size: 2rem;
+                padding: 1rem;
+                &:hover {
+                    background-color: #b4516f;
+                    border-radius: 1rem;
+                    transition: 0.5s ease-in-out;
+                    color: whitesmoke;
+                }
+            }
+        }
+    }
+}
+
