@@ -1,3 +1,68 @@
+
+.body__main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr auto 0.5fr;
+    grid-template-areas:
+        "head head"
+        "main__index main__index"
+        "foot foot";
+}
+
+.main__index {
+    grid-area: main__index;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
+    animation-name: index;
+    animation-duration: 2s;
+    height: 82.1rem;
+}
+
+.main__index__section {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: larger;
+    div {
+        width: 50%;
+        text-align: center;
+    }
+    img {
+        width: 300px;
+        filter: drop-shadow(-5px 10px 5px rgba(255, 0, 0, 0.774));
+    }
+}
+
+// ----------------------------------------- Records -----------------------------------------//
+
+.body__records {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr auto 0.5fr;
+    grid-template-areas:
+        "head head"
+        "main__records main__records"
+        "foot foot";
+}
+
+.main__records {
+    grid-area: main__records;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.records__article{
+    animation-name: presentacion;
+    animation-duration: 5s;
+}
+
+// ------------------------------------------ Tattoo -------------------------------------//
+
 .body__tattoo {
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -169,9 +234,92 @@
     }
 }
 
+// --------------------------------------------------- Wizard ------------------------------------------------------------//
+
+.body__wizard {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.7fr auto 0.5fr;
+    grid-template-areas:
+        "head head"
+        "main__wizard main__wizard"
+        "foot foot";
+}
+
+.main__wizard {
+    grid-area: main__wizard;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wizardlogo {
+    height: 50%;
+    width: 50%;
+    filter: drop-shadow(0 -5px 5px #0892d0);
+}
+
+// ----------------------------------------------------- Contacto ---------------------------------------//
+
+.body__contacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.7fr auto 0.5fr;
+    grid-template-areas:
+        "head head"
+        "contacto contacto"
+        "foot foot";
+}
+
+.main__contacto {
+    grid-area: contacto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0;
+}
+
+.contacto__container__formulario {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+
+.contacto__formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #821f38c7, #231319b4);
+    padding: 3rem 5rem;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+}
+
+
 /* --------------------------------------media queries----------------------------------- */
 
 @media screen and (max-width: 1210px) {
+    .main__index {
+        padding: 3rem;
+        justify-content: center;
+        height: auto;
+    }
+
+    .main__index__section {
+        flex-direction: column;
+        width: 100%;
+        padding: 2rem;
+    }
+
+    .main__index__section div {
+        width: 80%;
+    }
+
     .presentacion {
         width: 80%;
     }
@@ -179,9 +327,51 @@
     .presentacion-logo {
         width: 90%;
     }
+
+    .wizard__section-content {
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .contacto__acercade {
+        width: 100%;
+    }
 }
 
+@media screen and (max-width: 800px) {
+    .contacto__container__formulario {
+        width: 80%;
+    }
+
+    .main__contacto {
+        justify-content: flex-start;
+        padding: 1rem 0;
+    }
+}
+
+
 @media screen and (max-width: 610px) {
+    .body__index {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.3fr auto 1fr;
+        gap: 0;
+    }
+
+    .main__index {
+        padding: 1rem;
+        div {
+            padding: 2rem;
+        }
+    }
+
+    .main__index__section {
+        width: 100%;
+        padding: 0;
+        img {
+            width: 50%;
+            height: 50%;
+        }
+    }
     .body__tattoo {
         display: grid;
         grid-template-columns: 1fr;
@@ -315,5 +505,9 @@
         background-color: #7a0422c7;
         transition: 0.5s ease-in-out;
         border-radius: 1rem;
+    }
+
+    .contacto__container__formulario h2{
+        width: 100%;
     }
 }

@@ -119,7 +119,7 @@ iframe {
         }
     }
 
-    .header__nav ul{
+    .header__nav {
         ul {
             li {
                 display: block;
@@ -167,10 +167,12 @@ iframe {
 @media screen and (max-width: 400px) {
     .header__logo {
         justify-content: center;
+
         img {
             padding: 0;
             width: auto;
         }
+
         h1 {
             font-size: 2rem;
             width: 80%;
