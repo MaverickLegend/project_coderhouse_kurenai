@@ -112,6 +112,48 @@ iframe {
   margin: 2rem 0;
   font-size: 2rem; }
 
+.form-control {
+  color: whitesmoke !important; }
+
+.form-select {
+  color: whitesmoke !important; }
+
+.form-text {
+  color: whitesmoke !important; }
+
+.red--whatsapp:hover {
+  background: #02a802;
+  opacity: 80%; }
+
+.red--facebook:hover {
+  background: #2956a3;
+  opacity: 80%; }
+
+.red--instagram:hover {
+  background: #9900b8;
+  opacity: 80%; }
+
+.red--youtube:hover {
+  background: #ce1312;
+  opacity: 80%; }
+
+.boton, .boton--aceptar, .boton--reiniciar {
+  background-color: #821f38c7;
+  width: 10rem;
+  height: 5rem;
+  color: whitesmoke;
+  font-size: 2rem;
+  border: none;
+  border-radius: 1rem; }
+  .boton:hover, .boton--aceptar:hover, .boton--reiniciar:hover {
+    filter: saturate(180%); }
+
+.boton--aceptar:hover {
+  background-color: #02a802de; }
+
+.boton--reiniciar:hover {
+  background-color: #ce1212e3; }
+
 /* --------------------------------------media queries----------------------------------- */
 @media screen and (max-width: 1210px) {
   .header {
