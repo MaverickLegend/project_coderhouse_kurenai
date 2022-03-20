@@ -80,26 +80,25 @@ iframe {
     font-size: 2rem;
 }
 
-.form-control{
+.form-control {
     color: whitesmoke !important;
 }
 
-.form-select{
+.form-select {
     color: whitesmoke !important;
 }
 
-.form-text{
+.form-text {
     color: whitesmoke !important;
 }
 
-$redes: (
-	whatsapp: #02a802,
-	facebook: #2956a3,
-	instagram: #9900b8,
-	youtube: #ce1312
-);
+$redes: (whatsapp: #02a802,
+    facebook: #2956a3,
+    instagram: #9900b8,
+    youtube: #ce1312);
 
-@each $red, $color in $redes {
+@each $red,
+$color in $redes {
     .red--#{$red} {
         &:hover {
             background: $color;
@@ -109,7 +108,7 @@ $redes: (
 }
 
 
-.boton{
+.boton {
     background-color: #821f38c7;
     width: 10rem;
     height: 5rem;
@@ -117,22 +116,26 @@ $redes: (
     font-size: 2rem;
     border: none;
     border-radius: 1rem;
-        &:hover{
-            filter: saturate(180%);
-        }
+
+    &:hover {
+        filter: saturate(180%);
+    }
 }
 
-.boton--aceptar{
+.boton--aceptar {
     @extend .boton;
-    &:hover{
+
+    &:hover {
         background-color: #02a802de;
     }
 }
 
-.boton--reiniciar{
+.boton--reiniciar {
     @extend .boton;
-    &:hover{
-        background-color: #ce1212e3;;
+
+    &:hover {
+        background-color: #ce1212e3;
+        ;
     }
 }
 
@@ -144,16 +147,21 @@ $redes: (
         flex-direction: column;
         padding: 1rem;
         justify-content: center;
+
+        .header__logo {
+            width: 100%;
+
+            h1 {
+                width: 100%;
+            }
+        }
+
+        .header__nav {
+            width: 100%;
+            justify-content: space-evenly;
+        }
     }
 
-    .header__logo {
-        width: 100%;
-    }
-
-    .header__nav {
-        width: 100%;
-        justify-content: space-evenly;
-    }
 
     .footer div {
         margin: 1rem;
@@ -162,16 +170,19 @@ $redes: (
 
 @media screen and (max-width: 610px) {
     .header__logo {
+
         img {
             padding: 0;
             width: auto;
         }
 
         h1 {
-            font-size: 2.5rem;
+            font-size: 1.5rem;
             width: 65%;
             text-align: center;
         }
+
+
     }
 
     .header__nav {
@@ -188,11 +199,12 @@ $redes: (
     .footer {
         flex-direction: column;
         width: 100%;
+
+        .footer__rrss {
+            width: auto;
+        }
     }
 
-    .footer__rrss {
-        width: auto;
-    }
 
     .presentacion {
         padding: 0 1.5rem;
@@ -223,17 +235,21 @@ $redes: (
     .header__logo {
         justify-content: center;
 
-        img {
-            padding: 0;
-            width: auto;
+        a {
+            img {
+                padding: 0;
+                width: auto;
+            }
+
+            h1 {
+                font-size: 2rem;
+                width: 80%;
+                text-align: center;
+            }
         }
 
-        h1 {
-            font-size: 2rem;
-            width: 80%;
-            text-align: center;
-        }
     }
+
 
     .presentacion {
         padding: 1rem;

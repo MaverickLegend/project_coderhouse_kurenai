@@ -300,6 +300,25 @@
     width: 90%;
 }
 
+.contacto__map {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    width: 50%;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 1rem;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    p {
+        font-size: 1.5rem;
+        margin-top: 5rem;
+        letter-spacing: 0.5rem;
+    }
+    
+}
+
+
 /* --------------------------------------media queries----------------------------------- */
 
 @media screen and (max-width: 1210px) {
