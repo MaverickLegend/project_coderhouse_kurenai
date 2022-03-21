@@ -204,7 +204,7 @@ iframe {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 0.5fr auto 0.5fr;
-  grid-template-areas: "head head" "main__index main__index" "foot foot"; }
+  grid-template-areas: "head head" "main__index main__index" "foot foot"; }
 
 .main__index {
   grid-area: main__index;
@@ -233,7 +233,7 @@ iframe {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 0.5fr auto 0.5fr;
-  grid-template-areas: "head head" "main__records main__records" "foot foot"; }
+  grid-template-areas: "head head" "main__records main__records" "foot foot"; }
 
 .main__records {
   grid-area: main__records;
@@ -250,7 +250,7 @@ iframe {
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-template-rows: 0.5fr auto 0.5fr;
-  grid-template-areas: "head head" "aside__tattoo main__tattoo" "foot foot";
+  grid-template-areas: "head head" "aside__tattoo main__tattoo" "foot foot";
   grid-gap: 0.2rem;
   justify-items: center; }
 
@@ -377,7 +377,7 @@ iframe {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 0.7fr auto 0.5fr;
-  grid-template-areas: "head head" "main__wizard main__wizard" "foot foot"; }
+  grid-template-areas: "head head" "main__wizard main__wizard" "foot foot"; }
 
 .main__wizard {
   grid-area: main__wizard;
@@ -395,7 +395,7 @@ iframe {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 0.7fr auto 0.5fr;
-  grid-template-areas: "head head" "contacto contacto" "foot foot"; }
+  grid-template-areas: "head head" "contacto contacto" "foot foot"; }
 
 .main__contacto {
   grid-area: contacto;
@@ -469,7 +469,7 @@ iframe {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.5fr auto auto 0.5fr;
-    grid-template-areas: "head" "aside__tattoo" "main__tattoo" "foot"; }
+    grid-template-areas: "head" "aside__tattoo" "main__tattoo" "foot"; }
   .aside__tattoo {
     display: flex;
     font-size: smaller;
