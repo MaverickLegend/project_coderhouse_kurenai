@@ -197,6 +197,7 @@
             }
         }
     }
+
     .main__tattoo {
         background-image: url(../img/fondazoo.png);
         grid-area: main__tattoo;
@@ -204,21 +205,22 @@
         flex-direction: column;
         animation-name: maintattoo;
         animation-duration: 1.5s;
+
         .main__tattoo-title {
             text-align: center;
             margin: 2rem;
         }
-        
+
         .main__tattoo-galeria {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             grid-gap: 1rem;
             padding: 1rem;
-        
+
             img {
                 height: 300px;
                 width: 100%;
-        
+
                 &:hover {
                     transition: all .3s ease-in-out;
                     filter: saturate(180%);
@@ -241,18 +243,20 @@
         "head head"
         "main__wizard main__wizard"
         "foot foot";
-        .main__wizard {
-            grid-area: main__wizard;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            .wizardlogo {
-                height: 50%;
-                width: 50%;
-                filter: drop-shadow(0 -5px 5px #0892d0);
-            }
+
+    .main__wizard {
+        grid-area: main__wizard;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .wizardlogo {
+            height: 50%;
+            width: 50%;
+            filter: drop-shadow(0 -5px 5px #0892d0);
         }
+    }
 }
 
 // ----------------------------------------------------- Contacto ---------------------------------------//
@@ -315,20 +319,22 @@
 /* --------------------------------------media queries----------------------------------- */
 
 @media screen and (max-width: 1210px) {
-    .main__index {
-        padding: 3rem;
-        justify-content: center;
-        height: auto;
-    }
+    .body__main {
+        .main__index {
+            // padding: 3rem;
+            justify-content: center;
+            height: auto;
 
-    .main__index__section {
-        flex-direction: column;
-        width: 100%;
-        padding: 2rem;
-    }
+            .main__index__section {
+                flex-direction: column;
+                justify-content: center;
+                padding: 2rem;
 
-    .main__index__section div {
-        width: 80%;
+                div {
+                    width: 80%;
+                }
+            }
+        }
     }
 
     .presentacion {
@@ -366,25 +372,27 @@
         grid-template-columns: 1fr;
         grid-template-rows: 0.3fr auto 1fr;
         gap: 0;
-    }
 
-    .main__index {
-        padding: 1rem;
+        .main__index {
+            padding: 1rem;
 
-        div {
-            padding: 2rem;
+            .main__index__section {
+                width: 100%;
+                padding: 0;
+
+                img {
+                    width: 50%;
+                    height: 50%;
+                }
+            }
+
+            div {
+                padding: 2rem;
+            }
         }
     }
 
-    .main__index__section {
-        width: 100%;
-        padding: 0;
 
-        img {
-            width: 50%;
-            height: 50%;
-        }
-    }
 
     .body__tattoo {
         display: grid;
@@ -395,130 +403,135 @@
             "aside__tattoo"
             "main__tattoo"
             "foot";
-    }
 
-    .aside__tattoo {
-        display: flex;
-        font-size: smaller;
-        height: auto;
-        justify-content: center;
-
-        h2 {
+        .aside__tattoo {
             display: flex;
+            font-size: smaller;
+            height: auto;
             justify-content: center;
-            width: 100%;
+
+            .scroll__tattoo {
+                .tatuadores__dropdown {
+                    &:hover .dropdown-list {
+                        display: flex;
+                        align-items: center;
+                        width: 35rem;
+                        transition: 0.5s ease-in-out;
+                        border-radius: 1rem;
+                    }
+
+                    &:hover .dropdown__button {
+                        background-color: #7a0422c7;
+                        transition: 0.5s ease-in-out;
+                        border-radius: 1rem;
+                    }
+
+                    .dropdown__button {
+                        display: inline-block;
+                        background-color: transparent;
+                        border: none;
+                        font-size: larger;
+                        letter-spacing: 0.1cm;
+                        text-align: center;
+
+                        &:hover {
+                            background-color: crimson;
+                            border-radius: 1rem;
+                            transition: 0.5s ease-in-out;
+                        }
+                    }
+
+                    .dropdown-list {
+                        display: none;
+                        position: absolute;
+                        z-index: 1;
+                        background-image: linear-gradient(to top, #821f38ef, #231319ec);
+                        border-radius: 1rem;
+                        animation-name: dropdown;
+                        animation-duration: 1s;
+                        animation-fill-mode: forwards;
+                        font-size: larger;
+                        text-decoration: none;
+
+                        h2 {
+                            display: flex;
+                            justify-content: center;
+                            width: 100%;
+                        }
+
+                        a {
+                            display: block;
+
+                            &:hover {
+                                background-color: crimson;
+                                transition: 0.5s ease-in-out;
+                                border-radius: 1rem;
+                                color: whitesmoke;
+                            }
+                        }
+
+                        h2 {
+                            display: none;
+                        }
+
+                        .tatuadores-title {
+                            width: 80%;
+
+                            .aside__tattoo-avatar {
+                                img {
+                                    height: 100px;
+                                    width: 100px;
+                                    border-radius: 50px;
+                                    border: solid 1px black;
+                                }
+                            }
+
+                            h3 {
+                                font-size: large;
+                            }
+                        }
+                    }
+                }
+            }
+
+
+
         }
-    }
 
-    .aside__tattoo-avatar {
-        img {
-            height: 100px;
-            width: 100px;
-            border-radius: 50px;
-            border: solid 1px black;
-        }
-    }
+        .main__tattoo {
+            .presentacion {
+                width: 100%;
 
-    .tatuador-title {
-        display: none;
-    }
+                h3 {
+                    width: 100%;
+                }
 
-    .tatuadores-title {
-        width: 80%;
+                .presentacion-logo {
+                    width: 100%;
+                    padding: 1rem;
+                    font-size: 1.5rem;
+                    text-align: center;
 
-        h3 {
-            font-size: large;
-        }
-    }
+                    h2 {
+                        width: 50%;
+                    }
 
-    .main__tattoo-galeria {
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    }
+                    img {
+                        width: 50%;
+                    }
+                }
+            }
 
-    .presentacion {
-        width: 100%;
+            .main__tattoo-title {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+            }
 
-        h3 {
-            width: 100%;
-        }
-    }
-
-    .presentacion-logo {
-        width: 100%;
-        padding: 1rem;
-        font-size: 1.5rem;
-        text-align: center;
-
-        h2 {
-            width: 50%;
-        }
-
-        img {
-            width: 50%;
-        }
-    }
-
-    .main__tattoo-title {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    }
-
-    .dropdown__button {
-        display: inline-block;
-        background-color: transparent;
-        border: none;
-        font-size: larger;
-        letter-spacing: 0.1cm;
-        text-align: center;
-
-        &:hover {
-            background-color: crimson;
-            border-radius: 1rem;
-            transition: 0.5s ease-in-out;
-        }
-    }
-
-    .dropdown-list {
-        display: none;
-        position: absolute;
-        z-index: 1;
-        background-image: linear-gradient(to top, #821f38ef, #231319ec);
-        border-radius: 1rem;
-        animation-name: dropdown;
-        animation-duration: 1s;
-        animation-fill-mode: forwards;
-        font-size: larger;
-        text-decoration: none;
-
-        a {
-            display: block;
-
-            &:hover {
-                background-color: crimson;
-                transition: 0.5s ease-in-out;
-                border-radius: 1rem;
-                color: whitesmoke;
+            .main__tattoo-galeria {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
             }
         }
-
-        h2 {
-            display: none;
-        }
-    }
-
-    .tatuadores__dropdown:hover .dropdown-list {
-        display: flex;
-        align-items: center;
-        width: 35rem;
-        transition: 0.5s ease-in-out;
-        border-radius: 1rem;
-    }
-
-    .tatuadores__dropdown:hover .dropdown__button {
-        background-color: #7a0422c7;
-        transition: 0.5s ease-in-out;
-        border-radius: 1rem;
     }
 
     .contacto__container__formulario h2 {
