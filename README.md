@@ -1,9 +1,8 @@
-# project_coderhouse_kurenai
-Proyecto de curso Desarrollo Web - Coderhouse
-<h1 align="center">Hi 👋, I'm Cristián Rojas</h1>
-<h3 align="center">A passionate frontend developer from Chile.</h3>
 
-- 🔭 I’m currently working on **Kurenai Studio v1.0**
+<h1 align="center">Hi 👋, I'm Cristián Rojas</h1>
+<h3 align="center">A passionate junior frontend developer from Chile.</h3>
+
+- 🔭 I’m currently working on **Kurenai Studio v1.0 for my "Web Development" class at Coderhouse.cl.**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
