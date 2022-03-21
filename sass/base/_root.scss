@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif !important;
+    color: whitesmoke;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-image: url(../img/fondazoo.png);
+}
+
+h1 {
+    font-weight: normal;
+    letter-spacing: 0.15cm;
+}
+
+h2 {
+    font-weight: normal;
+    letter-spacing: 0.1cm;
+    font-size: 2rem;
+}
+
+h3 {
+    font-weight: normal;
+    font-size: 1.5rem;
+    letter-spacing: 0.05cm;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 0.05cm;
+}
+
+a:visited {
+    color: whitesmoke;
+}
+
+iframe {
+    height: 300px;
+    padding: 2rem 2rem;
+}
