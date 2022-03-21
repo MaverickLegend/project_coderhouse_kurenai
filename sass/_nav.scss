@@ -6,27 +6,35 @@
     width: 100%;
     align-items: center;
     border-radius: 1rem;
+
+    .header__logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        animation-name: banner;
+        animation-duration: 1.5s;
+
+        a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+
+            img {
+                text-align: center;
+                padding: 0 2rem;
+                height: 8rem;
+                width: auto;
+            }
+
+            h1 {
+                font-size: 4rem;
+            }
+        }
+    }
 }
 
-.header__logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-    animation-name: banner;
-    animation-duration: 1.5s;
-
-    img {
-        text-align: center;
-        padding: 0 2rem;
-        height: 8rem;
-        width: auto;
-    }
-
-    h1 {
-        font-size: 5rem;
-    }
-}
 
 .header__nav {
     display: flex;
