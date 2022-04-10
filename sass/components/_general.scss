@@ -161,11 +161,6 @@ $color in $redes {
             justify-content: space-evenly;
         }
     }
-
-
-    .footer div {
-        margin: 1rem;
-    }
 }
 
 @media screen and (max-width: 610px) {
@@ -199,9 +194,11 @@ $color in $redes {
     .footer {
         flex-direction: column;
         width: 100%;
+        align-items: stretch;
 
         .footer__rrss {
             width: auto;
+            text-align: center;
         }
     }
 

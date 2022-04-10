@@ -184,9 +184,7 @@ iframe {
         width: 100%; }
     .header .header__nav {
       width: 100%;
-      justify-content: space-evenly; }
-  .footer div {
-    margin: 1rem; } }
+      justify-content: space-evenly; } }
 
 @media screen and (max-width: 610px) {
   .header__logo img {
@@ -203,9 +201,11 @@ iframe {
       text-align: center; }
   .footer {
     flex-direction: column;
-    width: 100%; }
+    width: 100%;
+    align-items: stretch; }
     .footer .footer__rrss {
-      width: auto; }
+      width: auto;
+      text-align: center; }
   .presentacion {
     padding: 0 1.5rem;
     width: 100%; }
@@ -477,20 +477,21 @@ iframe {
     padding: 1rem 0; } }
 
 @media screen and (max-width: 610px) {
-  .body__index {
+  .body__main {
     grid-template-columns: 1fr;
     grid-template-rows: 0.3fr auto 1fr;
     gap: 0; }
-    .body__index .main__index {
+    .body__main .main__index {
       padding: 1rem; }
-      .body__index .main__index .main__index__section {
+      .body__main .main__index .main__index__section {
         width: 100%;
-        padding: 0; }
-        .body__index .main__index .main__index__section img {
+        padding: 0;
+        justify-content: flex-start; }
+        .body__main .main__index .main__index__section img {
           width: 50%;
           height: 50%; }
-      .body__index .main__index div {
-        padding: 2rem; }
+      .body__main .main__index div {
+        padding: 0; }
   .body__tattoo {
     display: grid;
     grid-template-columns: 1fr;

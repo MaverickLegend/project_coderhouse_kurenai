@@ -321,7 +321,6 @@
 @media screen and (max-width: 1210px) {
     .body__main {
         .main__index {
-            // padding: 3rem;
             justify-content: center;
             height: auto;
 
@@ -368,7 +367,7 @@
 
 
 @media screen and (max-width: 610px) {
-    .body__index {
+    .body__main {
         grid-template-columns: 1fr;
         grid-template-rows: 0.3fr auto 1fr;
         gap: 0;
@@ -379,6 +378,7 @@
             .main__index__section {
                 width: 100%;
                 padding: 0;
+                justify-content: flex-start;
 
                 img {
                     width: 50%;
@@ -387,7 +387,7 @@
             }
 
             div {
-                padding: 2rem;
+                padding: 0;
             }
         }
     }
