@@ -43,17 +43,17 @@
     <main class="main__contacto">
         <div class="presentacion">
             <h2>Contáctanos</h2>
-            <h3>Somos un equipo multidisciplinario a tu disposición. No dudes en realizar cualquier tipo de consulta para enterarte de todos los detalles de nuestros servicios.</h3>
+            <h3 id="infor">Somos un equipo multidisciplinario a tu disposición. No dudes en realizar cualquier tipo de consulta para enterarte de todos los detalles de nuestros servicios.</h3>
             <div>
                 <img src="" alt="">
             </div>
         </div>
         <div class="contacto__container__formulario">
             <h2>Ingrese sus datos de contacto y realice su consulta</h2>
-            <form class="contacto__formulario fs-4">
+            <form id ="formulario" class="contacto__formulario fs-4">
                 <label for="nombre_apellido">Nombre</label>
                 <div class="input-group mb-3">
-                    <input class="form-control form-control-lg bg-dark" type="text" name="nombre_apellido">
+                    <input class="form-control form-control-lg bg-dark" type="text" id="nombre" name="nombre_apellido">
                 </div>
                 <label for="numero_telefono">Teléfono</label>
                 <div class="input-group mb-3">
@@ -63,9 +63,9 @@
                 </div>
                 <label for="correo">Mail</label>
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control form-control-lg bg-dark" placeholder="Mail " aria-label="Username">
+                    <input type="text" class="form-control form-control-lg bg-dark" placeholder="Mail " aria-label="Username" id="mail">
                     <span class="bg-dark">@</span>
-                    <input type="text" class="form-control form-control-lg bg-dark" placeholder="Dominio" aria-label="Server">
+                    <input type="text" class="form-control form-control-lg bg-dark" placeholder="Dominio" aria-label="Server" id="domain">
                 </div>
                 <div class="mb-3">
                     <label for="servicio">Seleccione el área de consulta</label>
@@ -78,15 +78,15 @@
                 </div>
                 <div class="mb-3">
                     <label for="texto">Realice su consulta</label>
-                    <textarea class="form-control form-control-lg bg-dark" name="texto" id="texto" rows="20" cols="60"></textarea>
+                    <textarea class="form-control form-control-lg bg-dark" name="texto" id="consulta" rows="20" cols="60"></textarea>
                 </div>
                 <div class="mb-3">
                     <label for="party">Elija su fecha de trabajo tentativa:</label>
-                    <input class= "bg-dark" type="date" id="agenda" name="agenda" min="22-01-27" max="30-12-22">
+                    <input class= "bg-dark" type="date" id="fecha" name="agenda" min="22-01-27" max="30-12-22">
                 </div>
                 <div class="mb-3">
-                    <button type="button" class="boton--aceptar">Enviar</button>
-                    <button type="button" class="boton--reiniciar">Reiniciar</button>
+                    <button type="submit" value="enviar" onclick="getData()" class="boton--aceptar">Enviar</button>
+                    <button type="reset" class="boton--reiniciar">Reiniciar</button>
                 </div>
             </form>
         </div>
@@ -118,7 +118,8 @@
                         </div>
                     </div>
                 </div>
+            </div>
     </footer>
+    <script src="../main.js"></script>
 </body>
-
 </html>
