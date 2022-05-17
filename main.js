@@ -9,15 +9,21 @@ function submitForm(e){
     console.log(formularioPrueba[4]. value)
     console.log(formularioPrueba[5]. value)
     console.log(formularioPrueba[6]. value)
+    localStorage.setItem('nombre', formularioPrueba[0].value)
+    localStorage.setItem('telefono', formularioPrueba[1].value)
+    localStorage.setItem('mail', formularioPrueba[2].value)
+    localStorage.setItem('dominio', formularioPrueba[3].value)
+    localStorage.setItem('servicio', formularioPrueba[4].value)
+    localStorage.setItem('consulta', formularioPrueba[5].value)
+    localStorage.setItem('fecha', formularioPrueba[6].value)
+    let info = document.createTextNode("Muchas gracias, " + formularioPrueba[0].value +". Hemos recibido con éxito tu consulta.")
+    document.getElementById("infor").appendChild(info)
 }    
-const getData = function (){
-    let input_name = document.getElementById("nombre").value;
-    let input_tel = document.getElementById("telefono").value;
-    let input_mail = document.getElementById("mail").value;
-    let input_domain = document.getElementById("domain").value;
-    let input_servicio = document.getElementById("servicio").value;
-    let input_consulta = document.getElementById("consulta").value;
-    let input_fecha = document.getElementById("fecha").value;
-}    
-let info = document.getElementById("infor")
-info.innerText(input_name, input_tel, input_mail, input_domain, input_servicio, input_consulta, input_fecha);
+    // const getData = function (){
+    //     let input_tel = document.getElementById("telefono").value;
+    //     let input_mail = document.getElementById("mail").value;
+    //     let input_domain = document.getElementById("domain").value;
+    //     let input_servicio = document.getElementById("servicio").value;
+    //     let input_consulta = document.getElementById("consulta").value;
+    //     let input_fecha = document.getElementById("fecha").value;
+// }    
