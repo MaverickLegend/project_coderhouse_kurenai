@@ -18,7 +18,9 @@
     "url": "https://github.com/MaverickLegend/project_coderhouse_kurenai/issues"
   },
   "homepage": "https://github.com/MaverickLegend/project_coderhouse_kurenai#readme",
-  "dependencies": {},
+  "dependencies": {
+    "toastify-js": "^1.11.2"
+  },
   "devDependencies": {
     "node-sass": "^7.0.1",
     "nodemon": "^2.0.15"

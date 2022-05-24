@@ -19,6 +19,21 @@ function submitForm(e){
     let info = document.createTextNode("Muchas gracias, " + formularioPrueba[0].value +". Hemos recibido con éxito tu consulta.")
     document.getElementById("infor").appendChild(info)
 }    
+
+document.getElementById("toast").addEventListener("click", () => {
+    Toastify({
+        text: "Entregado con éxito!",
+        duration: 3000,
+        gravity: 'bottom',
+        position: 'center',
+        style: {
+            background: "linear-gradient(to right, #00b09b, #96c93d)",
+        }
+    }).showToast();
+    })
+
+
+
     // const getData = function (){
     //     let input_tel = document.getElementById("telefono").value;
     //     let input_mail = document.getElementById("mail").value;
@@ -26,4 +41,4 @@ function submitForm(e){
     //     let input_servicio = document.getElementById("servicio").value;
     //     let input_consulta = document.getElementById("consulta").value;
     //     let input_fecha = document.getElementById("fecha").value;
-// }    
+    // }
