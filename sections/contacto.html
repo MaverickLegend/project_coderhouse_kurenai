@@ -65,13 +65,13 @@
                 </div>
                 <label for="correo">Mail</label>
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control form-control-lg bg-dark" placeholder="Mail " aria-label="Username" id="mail">
+                    <input type="text" class="form-control form-control-lg bg-dark" placeholder="Mail " aria-label="Username" id="mail" name="mail_mail">
                     <span class="bg-dark">@</span>
-                    <input type="text" class="form-control form-control-lg bg-dark" placeholder="Dominio" aria-label="Server" id="domain">
+                    <input type="text" class="form-control form-control-lg bg-dark" placeholder="Dominio" aria-label="Server" id="domain" name="mail_domain">
                 </div>
                 <div class="mb-3">
                     <label for="servicio">Seleccione el área de consulta</label>
-                    <select class="form-select form-select-lg mb-3 bg-dark" name="servicio" id="servicio">
+                    <select class="form-select form-select-lg mb-3 bg-dark" name="servicio" id="servicio" name="option_select">
                         <option class="bg-dark" value="records">Kurenai Records</option>
                         <option class="bg-dark" value="tattoo">Kurenai Tattoo</option>
                         <option class="bg-dark" value="wizard">Kurenai Wizard</option>
@@ -87,7 +87,7 @@
                     <input class= "bg-dark" type="date" id="fecha" name="agenda" min="22-01-27" max="30-12-22">
                 </div>
                 <div class="mb-3">
-                    <button id="toast" type="submit" value="enviar" onclick="getData()" class="boton--aceptar">Enviar</button>
+                    <button id="toast" type="submit" value="enviar" class="boton--aceptar">Enviar</button>
                     <button type="reset" class="boton--reiniciar">Reiniciar</button>
                 </div>
                 <div>

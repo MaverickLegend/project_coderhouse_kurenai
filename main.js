@@ -1,8 +1,35 @@
 let contactoForm = document.getElementById("formulario");
-contactoForm.addEventListener("submit", submitForm);
-function submitForm(e){
+contactoForm.addEventListener('submit', (e)=>{
     e.preventDefault();
     let formularioPrueba = e.target
+    const datosForm = new FormData(document.getElementById("formulario"));
+    let nombre = datosForm.get('nombre_apellido');
+    let telefono = datosForm.get('numero_telefono')
+    let correo = datosForm.get('mail_mail')
+    let dominio = datosForm.get('mail_domain')
+    let servicio = datosForm.get('option_select')
+    let texto = datosForm.get('texto')
+    let fecha = datosForm.get('agenda')
+    fetch('https://jsonplaceholder.typicode.com/posts',{
+        method: 'POST',
+        body: JSON.stringify({
+            title: 'datosFormulario',
+            body: 'datosCliente',
+            userID: 1,
+            nombre_cliente: nombre,
+            telefono_cliente: telefono,
+            correo_cliente: correo,
+            dominio_cliente: dominio,
+            servicio_cliente: servicio,
+            consulta_cliente: texto,
+            fecha_cliente: fecha,
+        }),
+        headers: {
+            'contentType': 'application/json;charset=UTF-8',
+            },
+        })
+        .then((response) => response.json())
+        .then((res) => console.log(res))
     console.log(formularioPrueba[0]. value)
     console.log(formularioPrueba[1]. value)
     console.log(formularioPrueba[2]. value, formularioPrueba[3]. value)
@@ -18,7 +45,7 @@ function submitForm(e){
     localStorage.setItem('fecha', formularioPrueba[6].value)
     let info = document.createTextNode("Muchas gracias, " + formularioPrueba[0].value +". Hemos recibido con éxito tu consulta.")
     document.getElementById("infor").appendChild(info)
-}    
+})    
 
 document.getElementById("toast").addEventListener("click", () => {
     Toastify({
@@ -32,13 +59,3 @@ document.getElementById("toast").addEventListener("click", () => {
     }).showToast();
     })
 
-
-
-    // const getData = function (){
-    //     let input_tel = document.getElementById("telefono").value;
-    //     let input_mail = document.getElementById("mail").value;
-    //     let input_domain = document.getElementById("domain").value;
-    //     let input_servicio = document.getElementById("servicio").value;
-    //     let input_consulta = document.getElementById("consulta").value;
-    //     let input_fecha = document.getElementById("fecha").value;
-    // }
