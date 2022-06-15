@@ -2,12 +2,13 @@ const contactoForm = document.getElementById("formulario");
 let formObj
 let consultas = []
 let checked = false;
+const popup = document.querySelector('#formulario')
 contactoForm.addEventListener('submit', (e) => {
     e.preventDefault();
     let datosForm = new FormData(document.getElementById("formulario"));
 
     if(datosForm.get('nombre_apellido').trim() === ''){
-        console.log('nombre i apellido esta vacio');
+        console.log('nombre y apellido esta vacio');
     }
     else if(datosForm.get('mail_mail').trim() === ''){
         console.log('mail esta vacio');
